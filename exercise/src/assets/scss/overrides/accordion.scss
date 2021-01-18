@@ -1,0 +1,39 @@
+.accordion {
+    &__content {
+        // add your styles here...
+    }
+    &__header {
+        transition: all 0.5s ease;
+        @extend .card-header;
+        background-color: #ffffff;
+    }
+    &__header-active {
+        color: #ffffff;
+        border-bottom: 4px solid $blue;
+        button {
+            color: $blue;
+            font-weight: 600;
+            &:focus {
+                color: $blue;
+                font-weight: 600;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+    &__title {
+        @extend .w-100, .btn, .rounded-0, .text-left;
+        color: $gray-600;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    &__collapse {
+        @extend .border-bottom;
+    }
+    &__body {
+        @extend .card-body, .px-4;
+        color: $gray-600;
+    }
+}

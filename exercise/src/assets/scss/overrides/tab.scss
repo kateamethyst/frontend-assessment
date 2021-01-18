@@ -1,0 +1,34 @@
+.tab {
+    &__menu {
+        @extend .p-0, .m-0;
+        list-style-type: none;
+    }
+    &__item {
+        @extend .px-3, .py-2;
+        display: inline-block;
+        transition: border-color 0.5s ease;
+        border-bottom: 4px solid $white;
+        &--active {
+            border-color: $blue;
+            > .btn {
+                @extend .font-weight-bold;
+                color: $blue;
+            }
+        }
+    }
+    &__button {
+        box-shadow: none;
+        color: $gray-400;
+        &:focus, &:hover {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    &__content {
+        @extend .border-top;
+    }
+    &__pane {
+        min-height: 200px;
+        color: $gray-600;
+    }
+}
