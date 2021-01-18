@@ -1,0 +1,77 @@
+body {
+    background-color: $body-bg;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn--outline-bolder {
+    border-width: 3px; 
+}
+
+.card {
+    @extend  .p-3, .mx-lg-2, .mx-xl-2, .mx-md-2, .mx-0, .my-4, .shadow-sm, .text-center;
+    width: 20rem;
+    &-text {
+        min-height: 200px;
+    }
+    &-img-top {
+        @extend .rounded;
+    }
+    &__button {
+        @extend .btn, .btn--outline-bolder, .btn-outline-dark, .rounded-pill, .px-4, .text-uppercase, .font-weight-bold;
+    }
+}
+
+.banner {
+    @extend .mb-4;
+    position: relative;
+    &__image {
+        @extend .img-fluid, .w-100, .h-100;
+        object-fit: cover;
+    }
+    &--display-desktop {
+        @extend .d-xl-block, .d-lg-block, .d-md-block, .d-none;
+    }
+    &--display-mobile {
+        @extend .d-xl-none, .d-lg-none, .d-md-none, .d-block;
+    }
+    &__overlay {
+        @extend .text-center, .h-100, .w-100, .position-absolute;
+        top: 0;
+        left: 0;
+        background: #716f6f;
+        opacity: 0.6;
+    }
+    &__body {
+        @extend .text-center, .position-absolute, .w-100, .p-2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+         -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+    }
+    &__title {
+        @extend .font-weight-bolder;
+        color: #ffffff;
+        font-size: 56px;
+    }
+    &__text {
+        @extend .font-weight-light;
+        letter-spacing: 2px;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+      width: 100%;
+    }
+    .banner {
+        &__title {
+            font-size: 48px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
