@@ -1,4 +1,4 @@
-##### Instruction
+#### Instruction
 ---
 1. Run ```git clone https://github.com/kateamethyst/frontend-assessment.git```
 2. cd frontend-assestment/exercise
