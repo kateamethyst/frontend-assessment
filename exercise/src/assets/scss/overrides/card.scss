@@ -1,0 +1,13 @@
+.card {
+    @extend  .p-3, .mx-lg-2, .mx-xl-2, .mx-md-2, .mx-0, .my-4, .shadow-sm, .text-center;
+    width: 20rem;
+    &-text {
+        min-height: 200px;
+    }
+    &-img-top {
+        @extend .rounded;
+    }
+    &__button {
+        @extend .btn, .btn--outline-bolder, .btn-outline-dark, .rounded-pill, .px-4, .text-uppercase, .font-weight-bold;
+    }
+}
