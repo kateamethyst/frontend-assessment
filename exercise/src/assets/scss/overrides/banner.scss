@@ -1,0 +1,33 @@
+.banner {
+    @extend .mb-4;
+    position: relative;
+    &__image {
+        @extend .img-fluid, .w-100, .h-100;
+        object-fit: cover;
+    }
+    &__overlay {
+        @extend .text-center, .h-100, .w-100, .position-absolute;
+        top: 0;
+        left: 0;
+        background: #716f6f;
+        opacity: 0.6;
+    }
+    &__body {
+        @extend .text-center, .position-absolute, .w-100, .p-2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+         -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+    }
+    &__title {
+        @extend .font-weight-bolder;
+        color: #ffffff;
+        font-size: 56px;
+    }
+    &__text {
+        @extend .font-weight-light;
+        letter-spacing: 2px;
+        color: #ffffff;
+    }
+}

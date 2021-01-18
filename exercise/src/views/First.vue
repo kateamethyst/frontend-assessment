@@ -5,8 +5,8 @@
         <banner>
           <template v-slot:image>
               <div class="banner__overlay"></div>
-              <img src="http://via.placeholder.com/1920x650" class="banner__image banner--display-desktop" alt="Banner Image" title="Banner Image" />
-              <img src="http://via.placeholder.com/600x600" class="banner__image banner--display-mobile" alt="Banner Image" title="Banner Image" />
+              <img src="http://via.placeholder.com/1920x650" class="banner__image --display-desktop" alt="Banner Image" title="Banner Image" />
+              <img src="http://via.placeholder.com/600x600" class="banner__image --display-mobile" alt="Banner Image" title="Banner Image" />
           </template>
           <template v-slot:title>
             <h1 class="banner__title">Hi Developer!</h1>
