@@ -1,40 +1,21 @@
-Introduction
+##### Instruction
 ---
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, Vue.js preferred. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+1. Run ```git clone https://github.com/kateamethyst/frontend-assessment.git```
+2. cd frontend-assestment/exercise
+3. Run ```npm install```
+4. Run ```npm serve```
 
-Exercise 1
+> You can also visit the deployed version [here](https://fe-assestment.herokuapp.com/).
+
+###### Frontend Assestment
+> [https://github.com/mindarc/frontend-assessment](https://github.com/mindarc/frontend-assessment)
+
+
+### Bonus
 ---
-Build a responsive page based on the designs.
+#### Explain why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana.
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+When we are concatenating ```'a' + +``` javascript will try to concatenate the string but it will be failed since there are no value. Javascript will try to convert the value in ```+ +``` to number but it will not be converted. The Javascript engine will return Nan. Nan refers to not a number.
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
+![https://imgur.com/a/RDrrhsh](https://i.imgur.com/dyGVqnp.png)
 
-##### Assets
-* Desktop banner - http://via.placeholder.com/1920x650
-* Mobile banner - http://via.placeholder.com/600x600
-* Content images - http://via.placeholder.com/400x300
-
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
-
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
-
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
-
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
