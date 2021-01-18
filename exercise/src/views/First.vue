@@ -17,7 +17,7 @@
         </banner>
       </div>
       <div class="col-sm-12">
-        <div class="d-flex flex-xl-row flex-lg-row flex-md-row  flex-md-row flex-column justify-content-center align-center">
+        <div class="d-flex flex-xl-row flex-lg-row flex-md-row  flex-md-row flex-column justify-content-center align-center p-4">
           <card v-for="service in services" :key="service.id">
             <template v-slot:image>
               <img v-if="service.image === ''" src="http://via.placeholder.com/400x300" class="card-img-top" alt="Content Image" title="Content Image" />
